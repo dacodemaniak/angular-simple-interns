@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Intern } from './types/intern.type';
+import { InternService } from './services/intern.service';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +8,16 @@ import { Intern } from './types/intern.type';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  interns: Array<Intern> = [
-    {
-      lastname: 'Aubert',
-      firstname: 'Jean-Luc'
-    },
-    {
-      lastname: 'Casper',
-      firstname: 'Manon'
-    }
-  ]
+  /**
+   * @var Array<Intern>
+   * Array of Intern to be displayed
+   */
+  interns: Array<Intern> = []
+  constructor(
+    private _service: InternService
+  ) {}
+
+  ngOnInit(): void {
+    this.interns = this._service.interns
+  }
 }

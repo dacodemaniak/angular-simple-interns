@@ -5,10 +5,10 @@ import { map, take } from 'rxjs';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  templateUrl: './intern.component.html',
+  styleUrl: './intern.component.scss'
 })
-export class HomeComponent {
+export class InternComponent {
   /**
    * @var Array<Intern>
    * Array of Intern to be displayed

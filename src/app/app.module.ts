@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
+import { InternModule } from './intern/intern.module';
 import { PoeModule } from './poe/poe.module';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { PoeModule } from './poe/poe.module';
   ],
   imports: [
     BrowserModule,
-    HomeModule,
+    InternModule,
     PoeModule,
     AppRoutingModule
   ],

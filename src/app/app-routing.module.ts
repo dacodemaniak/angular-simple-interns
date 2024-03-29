@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { InternComponent } from './intern/intern.component';
 import { HomeComponent as PoeHome } from './poe/home/home.component'
-import { InternFormComponent } from './home/intern-form/intern-form.component';
+import { InternFormComponent } from './intern/intern-form/intern-form.component';
 import { AddComponent } from './poe/add/add.component';
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
+    component: InternComponent,
     pathMatch: 'full'
   },
   {

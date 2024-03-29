@@ -25,5 +25,12 @@
       "lastname": "Lecter",
       "firstname": "Hanibal"
     }
+  ],
+  "poes": [
+    {
+      "id": "d90f",
+      "name": "Dev Cyber",
+      "duration": 399
+    }
   ]
 }
